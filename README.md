@@ -43,7 +43,6 @@ Severity must be one of: `info` · `low` · `medium` · `high` · `warning` · `
 
 ## If I had more time
 
-- **PostgreSQL** — the store (`getAllStatuses`, `createStatus`, `deleteStatus`) is already isolated behind a module boundary, so swapping in `pg` wouldn't touch the routes at all
-- **Real-time feed** — Server-Sent Events so multiple tabs receive new posts without polling
+- **PostgreSQL** — the store (`getAllStatuses`, `createStatus`, `deleteStatus`) is already isolated, would love to implement this.
 - **Tests** — route handlers with `supertest`, components with React Testing Library
 - **Edit status** — `PATCH /api/statuses/:id` with an inline edit mode on the card
