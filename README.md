@@ -42,6 +42,7 @@ Severity must be one of: `info` · `low` · `medium` · `high` · `warning` · `
 
 ## If I had more time
 
-- **PostgreSQL** — the store (`getAllStatuses`, `createStatus`, `deleteStatus`) is already isolated, would love to implement this.
-- **Tests** — route handlers with `supertest`, components with React Testing Library
-- **Edit status** — `PATCH /api/statuses/:id` with an inline edit mode on the card
+- **PostgreSQL**: the store (`getAllStatuses`, `createStatus`, `deleteStatus`) is already isolated, would love to implement this.
+- **Tests**: route handlers with `supertest`, components with React Testing Library
+- **Edit status**: `PATCH /api/statuses/:id` with an inline edit mode on the card
+- **Add Drag-Drop**: Would love to add a drap and drop feature, for multiple users to get custom status updates
