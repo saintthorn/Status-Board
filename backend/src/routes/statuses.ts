@@ -14,12 +14,12 @@ import {
 
 const router = Router();
 
-// GET /api/statuses — list all statuses, newest first
+// GET /api/statuses; list all statuses, newest first
 router.get("/", (_req: Request, res: Response<StatusListResponse>) => {
   res.json({ statuses: getAllStatuses() });
 });
 
-// POST /api/statuses — create a new status
+// POST /api/statuses; create a new status
 router.post(
   "/",
   (req: Request, res: Response<StatusResponse | ErrorResponse>) => {
@@ -52,11 +52,9 @@ router.post(
       return;
     }
     if (!severity || !VALID_SEVERITIES.includes(severity as Severity)) {
-      res
-        .status(400)
-        .json({
-          error: `severity must be one of: ${VALID_SEVERITIES.join(", ")}`,
-        });
+      res.status(400).json({
+        error: `severity must be one of: ${VALID_SEVERITIES.join(", ")}`,
+      });
       return;
     }
 
@@ -69,7 +67,7 @@ router.post(
   },
 );
 
-// DELETE /api/statuses/:id — remove a status by id
+// DELETE /api/statuses/:id; remove a status by id
 router.delete("/:id", (req: Request, res: Response<ErrorResponse | void>) => {
   const id = req.params.id as string;
   const deleted = deleteStatus(id);

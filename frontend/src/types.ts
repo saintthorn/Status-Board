@@ -1,17 +1,23 @@
-export type Severity = 'info' | 'low' | 'medium' | 'high' | 'warning' | 'critical'
+export type Severity = "low" | "medium" | "high" | "warning" | "critical";
 
-export const ALL_SEVERITIES: Severity[] = ['info', 'low', 'medium', 'high', 'warning', 'critical']
+export const ALL_SEVERITIES: Severity[] = [
+  "low",
+  "medium",
+  "high",
+  "warning",
+  "critical",
+];
 
 export interface Status {
-  id: string
-  title: string
-  message: string
-  severity: Severity
-  createdAt: string
+  id: string;
+  title: string;
+  message: string;
+  severity: Severity;
+  createdAt: string;
 }
 
 export interface CreateStatusPayload {
-  title: string
-  message: string
-  severity: Severity
+  title: string;
+  message: string;
+  severity: Severity;
 }

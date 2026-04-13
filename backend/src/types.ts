@@ -1,30 +1,36 @@
-export type Severity = 'info' | 'low' | 'medium' | 'high' | 'warning' | 'critical'
+export type Severity = "low" | "medium" | "high" | "warning" | "critical";
 
-export const VALID_SEVERITIES: Severity[] = ['info', 'low', 'medium', 'high', 'warning', 'critical']
+export const VALID_SEVERITIES: Severity[] = [
+  "low",
+  "medium",
+  "high",
+  "warning",
+  "critical",
+];
 
 export interface Status {
-  id: string
-  title: string
-  message: string
-  severity: Severity
-  createdAt: string // ISO 8601
+  id: string;
+  title: string;
+  message: string;
+  severity: Severity;
+  createdAt: string; // ISO 8601
 }
 
 export interface CreateStatusBody {
-  title?: unknown
-  message?: unknown
-  severity?: unknown
+  title?: unknown;
+  message?: unknown;
+  severity?: unknown;
 }
 
 // API response shapes
 export interface StatusListResponse {
-  statuses: Status[]
+  statuses: Status[];
 }
 
 export interface StatusResponse {
-  status: Status
+  status: Status;
 }
 
 export interface ErrorResponse {
-  error: string
+  error: string;
 }
