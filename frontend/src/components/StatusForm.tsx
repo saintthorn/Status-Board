@@ -11,6 +11,7 @@ interface StatusFormProps {
 }
 
 const SEVERITY_LABELS: Record<Severity, string> = {
+  info: "Info",
   low: "Low",
   medium: "Medium",
   high: "High",

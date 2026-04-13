@@ -7,12 +7,12 @@ const store: Status[] = [
     id: randomUUID(),
     title: "All systems operational",
     message: "Everything is running smoothly. No issues detected.",
-    severity: "low",
+    severity: "info",
     createdAt: new Date(Date.now() - 1000 * 60 * 5).toISOString(),
   },
   {
     id: randomUUID(),
-    title: "Elevated error rate on payments API",
+    title: "Failed payment rate exceeds threshold",
     message:
       "We are seeing a 3% error rate on the /v2/payments endpoint. Investigation underway.",
     severity: "high",

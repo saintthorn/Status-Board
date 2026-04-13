@@ -59,12 +59,10 @@ export function useStatuses(): UseStatusesReturn {
   );
 
   const removeStatus = useCallback(async (id: string): Promise<void> => {
-    // Optimistic removal
     setStatuses((prev) => prev.filter((s) => s.id !== id));
     try {
       await api.deleteStatus(id);
     } catch (err) {
-      // Roll back on failure
       api
         .fetchStatuses()
         .then(setStatuses)

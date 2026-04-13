@@ -1,6 +1,13 @@
-export type Severity = "low" | "medium" | "high" | "warning" | "critical";
+export type Severity =
+  | "info"
+  | "low"
+  | "medium"
+  | "high"
+  | "warning"
+  | "critical";
 
 export const ALL_SEVERITIES: Severity[] = [
+  "info",
   "low",
   "medium",
   "high",
