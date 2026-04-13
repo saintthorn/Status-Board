@@ -18,9 +18,9 @@
     --sev-high-bg: #fff7ed;
     --sev-high-text: #c2410c;
 
-    --sev-warning: #f04f2e;
-    --sev-warning-bg: #fef3f0;
-    --sev-warning-text: #c0321c;
+    --sev-warning: #f2703a;
+    --sev-warning-bg: #fef6f1;
+    --sev-warning-text: #c04a22;
 
     --sev-critical: #ef4444;
     --sev-critical-bg: #fef2f2;
@@ -43,8 +43,8 @@
         --sev-high-bg: rgba(218, 130, 72, 0.13);
         --sev-high-text: #d8a474;
 
-        --sev-warning-bg: rgba(210, 72, 44, 0.13);
-        --sev-warning-text: #d4806e;
+        --sev-warning-bg: rgba(215, 100, 52, 0.13);
+        --sev-warning-text: #d49278;
 
         --sev-critical-bg: rgba(218, 96, 84, 0.13);
         --sev-critical-text: #d8908a;
