@@ -35,7 +35,6 @@ Open [http://localhost:5173](http://localhost:5173).
 | `GET` | `/api/statuses` | All statuses, newest first |
 | `POST` | `/api/statuses` | Create a status (`title`, `message`, `severity`) |
 | `DELETE` | `/api/statuses/:id` | Delete a status by ID |
-| `GET` | `/health` | Liveness check |
 
 Severity must be one of: `info` · `low` · `medium` · `high` · `warning` · `critical`
 
